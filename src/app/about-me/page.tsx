@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div>
       <h1>About Me</h1>
-      <p>Hello! I'm Ruben Janssen, a passionate software developer...</p>
+      <p>Hello! I&apos;m Ruben Janssen, a passionate software developer...</p>
       <Link href="/">Go back to Home</Link>
     </div>
   );
