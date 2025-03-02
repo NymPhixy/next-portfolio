@@ -17,8 +17,9 @@ const portfolioItems: {
 };
 
 function PortfolioItem() {
-  const { id } = useParams();
-  const item = typeof id === "string" ? portfolioItems[id] : undefined;
+  const params = useParams();
+  const id = params?.id as string;
+  const item = portfolioItems[id];
 
   if (!item) {
     return <p>Project not found</p>;
